@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    //转换成字符串类型
+    //1. toString()方法  (这种方法用的多)
+        var num = 123;
+        var isRight = true;
+        console.log(num.toString());
+        console.log(isRight.toString());
+        console.log(typeof num.toString());
+        console.log(typeof isRight.toString());
+
+    // 下面这个方式是错误的 null和undefined没有toString()方法
+    //     var a = null;
+    //     console.log(a.toString());
+
+    //2. String()方法  （一般只有在转换null和undefined的时候用这一种）
+    var num = 123;
+        var isRight = true;
+        console.log(String(num));
+        console.log(String(isRight));
+        console.log(typeof String(num));
+        console.log(typeof String(isRight));
+
+        var a = null;
+        console.log(String(a));
+        console.log(typeof String(a));
+        
+    //3.字符串拼接
+        var num = 18;
+        var isRight = true;
+        console.log(num + '');
+        console.log(isRight + '');
+        //在计算机内存中true为1 所以 18+1=19
+        console.log(num + isRight);
+
+    </script>
+</head>
+<body>
+
+    
+</body>
+</html>

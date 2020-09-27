@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  var str  = '1235sad'
+        // console.log(Boolean(str));
+
+        // console.log(Boolean(NaN));
+
+        // 转换布尔类型输出为false的只有五种： null，undefined,0 ,NaN ,''空字符串，其余的都是true
+        const p = new Promise((resolve,reject) =>{
+    console.log(1);
+    setTimeout(()=>{
+        console.log(2);
+    })
+    resolve(4)
+    console.log(3);
+}
+)
+
+setTimeout(()=>{
+    console.log(5);
+})
+
+p.then(value =>{
+    console.log(value);
+})
+
+    </script>
+</body>
+</html>

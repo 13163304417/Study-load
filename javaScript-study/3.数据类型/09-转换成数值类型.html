@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1. Number()
+        // var str = 'abc';
+        // var isRight = true;
+
+        // console.log(Number(str));  // 输出的值为NaN（not a number）
+        // console.log(Number(isRight));  //输出为1
+
+        //Number()把字符串转换成数值类型的时候，如果字符串中有一个不是数字，则返回NaN
+        // console.log(Number('123'+'awe'));
+
+
+        //2. parseInt()  int  整数
+        // var str = '123';
+        // var isRight = 'false';
+
+        // console.log(parseInt(str));
+        // parseInt 无法把布尔类型转换成数值类型，返回的结果是NaN
+        // console.log(parseInt(isRight));
+
+        // console.log(parseInt('avc'));
+        // parseInt 在转换字符的时候，如果遇到数字就会转换成数字，如果遇到非数字就会返回
+        // console.log(parseInt('12444asc'));
+
+        //如果字符串中第一个字符是非数字，则返回NaN
+        // console.log(parseInt('avc132'));
+        // 如果字母前后都有数字，则只输出第一个字母前的数字
+        // console.log(parseInt('123vva12322'));
+
+
+        //3. parseFloat()
+
+        // var str = '123.33';
+        // var isRight = true;
+
+        // console.log(Number(str)); // 输出为123.33
+
+        // console.log(parseInt(str));//输出为123
+
+        // console.log(parseFloat(str));//输出为123.33
+        //parseFloat 也无法转换布尔类型
+        // console.log(parseFloat(isRight)); 
+        //parseFloat 只能解析第一个点，遇到第二个点就认为是非数字结束
+        // console.log(parseFloat('123.123.123aaa'));
+
+        // console.log(parseFloat('123aaa'));
+
+
+        // //4. 取正或者取负 + -
+        // var num = +5;
+        // console.log(num); //输出为5
+
+        // var num1 = -5;
+        // console.log(num1); //输出为-5
+
+        // var str = '123';
+        // console.log(+str); //输出为123
+        // console.log(-str);//输出为-123
+
+        // var str1 = '123ac'; 
+        // console.log(+str1); //输出为NaN
+        
+        // var str2 = '23';
+        // console.log(str2 + 6);
+
+       
+
+    </script>
+</body>
+</html>
