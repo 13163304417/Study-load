@@ -1,0 +1,17 @@
+#lamp{
+    height: 32px;
+    width: 32px;
+}
+
+table.lamp{
+    width: 100%;
+    border: 1px solid black;
+}
+
+table.lamp th,td{
+    padding: 10px;
+}
+
+table.lamp td{
+    width: 40px;
+}

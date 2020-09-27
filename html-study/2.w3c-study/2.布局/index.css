@@ -1,0 +1,36 @@
+#header{
+    background-color: black;
+    text-align: center;
+    color: pink;
+    padding: 5px;
+}
+
+#people{
+    /* 上下内容的距离 */
+    line-height: 80px;
+    text-align: center;
+    background-color: #eeeeee;
+    height: 400px;
+    width: 200px;
+    /* 将此区域放在最左边 */
+    float: left;
+    padding: 5px;
+    font-size: 25px;
+}
+
+#content{
+    background-color:thistle;
+    width: 80%;
+    height: 390px;
+    float: left;
+    padding: 10px;
+    font-size: 24px;
+}
+
+#footer{
+    background-color: black;
+    color: pink;
+    padding: 5px;
+    text-align: center;
+    clear: both;
+}
