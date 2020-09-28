@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 2.布局 -->
+    <div id="app">
+        {{msg}}</br>
+        {{obj.name + ' '+ obj.age + ' ' + obj.sex}}
+    </div>
+    <!-- 1.导包 -->
+    <script src="vue.js"></script>
+    <!-- 3. 使用vue语法 -->
+    <script>
+        // 得到一个Vue的实例
+         new Vue({
+            // el:'.main'  也可以使用class
+            //挂载点一定要是一个正常的元素，不能挂在html和body上
+            el:'#app', //相当于是一个querySelector
+            //相当于是一个vue的变量
+            data: {
+                msg : 'hello Vue!',
+                obj :{
+                    name : 'qison',
+                    age : 18,
+                    sex : '男'
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>

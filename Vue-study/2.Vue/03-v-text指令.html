@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 
+        v-text指令
+        指令： 相当于是标签的自定义属性
+        指令值： 相当于自定义属性的值
+
+        v-text指令表示替换的文本，类似于innerText
+
+        v-text指令值： 一句话表达式
+            1. 变量
+            2. 基本运算
+            3. 三元表达式
+     -->
+</head>
+<body>
+    <div id="app">
+        <p v-text="msg">浮生若茶</p>
+        <p v-text="obj.age>18?obj.name+'成年了':obj.name+'还没有成年了'"></p>
+        <p v-text="obj.sex=='男'?'出去打工':'在家照顾孩子'"></p>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        new Vue({
+            el : '#app',
+            data : {
+                msg : '淡若清风',
+                obj :{
+                    name : 'qison',
+                    age : 19 ,
+                    sex : '男'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
